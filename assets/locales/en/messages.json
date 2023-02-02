@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "chat-gpt-firefox-new"
+    },
+    "appShortName": {
+        "message": "chat-gpt-firefox-new"
+    },
+    "appDescription": {
+        "message": "Uses the new chat gpt api in firefox for convenient access to its responses"
+    }
+}

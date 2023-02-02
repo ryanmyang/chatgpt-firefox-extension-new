@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "name": "Launch Program",
+        //     "program": "${workspaceFolder}/server.js",
+        //     "request": "launch",
+        //     "skipFiles": [
+        //         "<node_internals>/**"
+        //     ],
+        //     "type": "node"
+        // },
+        {
+            "name": "Launch WebExtension",
+            //"url": "http://localhost:6080",
+            "type": "firefox",
+            "request": "attach",
+            //"reAttach": true,
+            "addonPath": "${workspaceFolder}/extension",
+            "reloadOnChange": {
+                "watch": [
+                    "${workspaceFolder}/extension/*.js"
+                ],
+                "ignore": [
+                    "${workspaceFolder}/node_modules/**"
+                ]
+            },
+            "log": {
+                "fileName": "${workspaceFolder}/log.txt",
+                "fileLevel": {
+                    "default": "Debug"
+                }
+            }
+        }
+    ]
+}
